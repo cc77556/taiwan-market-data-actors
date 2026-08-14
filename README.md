@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders and more. 16 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders and more. 17 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -37,6 +37,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-stock-alerts](https://apify.com/chamarix/taiwan-stock-alerts) | Watch-list, disposition & short-sale suspension alerts (注意股/處置股) | multi-year |
 | [taiwan-insider-share-transfers](https://apify.com/chamarix/taiwan-insider-share-transfers) | Insider share-transfer filings — directors, officers, 10% holders (內部人轉讓申報) | 2002+ |
 | [taiwan-director-shareholdings](https://apify.com/chamarix/taiwan-director-shareholdings) | Monthly director / officer / 10%-holder shareholdings and share-pledge ratio (董監持股質押) | 1999+ |
+| [taiwan-block-trades](https://apify.com/chamarix/taiwan-block-trades) | Every block trade with price, size, paired/continuous and basket constituents (鉅額交易) | 2005+ |
 
 ### Government & civic data
 
