@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders and more. 18 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders and more. 19 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -39,6 +39,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-director-shareholdings](https://apify.com/chamarix/taiwan-director-shareholdings) | Monthly director / officer / 10%-holder shareholdings and share-pledge ratio (董監持股質押) | 1999+ |
 | [taiwan-block-trades](https://apify.com/chamarix/taiwan-block-trades) | Every block trade with price, size, paired/continuous and basket constituents (鉅額交易) | 2005+ |
 | [taiwan-shareholder-meetings](https://apify.com/chamarix/taiwan-shareholder-meetings) | Shareholder meeting dates & venues, book-closure periods, board elections, e-voting windows (股東會) | 2005+ |
+| [taiwan-emerging-stock-quotes](https://apify.com/chamarix/taiwan-emerging-stock-quotes) | Emerging Stock Board quotes, bid/ask & turnover, company register and listing-application status — the pre-IPO tier (興櫃) | 2003+ |
 
 ### Government & civic data
 
