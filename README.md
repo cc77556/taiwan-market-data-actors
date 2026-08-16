@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders and more. 19 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders and more. 20 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -21,6 +21,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-day-trading-stats](https://apify.com/chamarix/taiwan-day-trading-stats) | Day-trading volume, value & ratio per stock (現股當沖) | 2014+ |
 | [tdcc-shareholding-dispersion](https://apify.com/chamarix/tdcc-shareholding-dispersion) | Weekly TDCC shareholding dispersion — retail vs whale structure (股權分散表) | weekly |
 | [taiwan-foreign-shareholding](https://apify.com/chamarix/taiwan-foreign-shareholding) | Foreign ownership % and remaining quota per stock (外資持股) | snapshot |
+| [taiwan-etf-regular-investment](https://apify.com/chamarix/taiwan-etf-regular-investment) | Monthly regular savings plan rankings — top stocks & ETFs by investor accounts, retail flow not price (定期定額) | 2020-10+ |
 
 ### Fundamentals (基本面)
 
