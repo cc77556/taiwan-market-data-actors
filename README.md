@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders and more. 22 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 23 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -43,6 +43,12 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-emerging-stock-quotes](https://apify.com/chamarix/taiwan-emerging-stock-quotes) | Emerging Stock Board quotes, bid/ask & turnover, company register and listing-application status — the pre-IPO tier (興櫃) | 2003+ |
 | [taiwan-treasury-stock-buybacks](https://apify.com/chamarix/taiwan-treasury-stock-buybacks) | Every buyback ever filed — purpose, price band and window announced, versus shares actually bought and average price paid (庫藏股) | 2000+ |
 | [taiwan-warrants-daily](https://apify.com/chamarix/taiwan-warrants-daily) | Every listed & OTC warrant priced daily — OHLC, underlying close, strike, exercise ratio, expiry, plus moneyness, premium and leverage (權證) | 2004+ |
+
+### Property market (不動產)
+
+| Actor | Data | History |
+|---|---|---|
+| [taiwan-real-estate-transactions](https://apify.com/chamarix/taiwan-real-estate-transactions) | Every registered sale, presale contract and lease — price, area in ping, floor, layout, building age, parking, with the Ministry's own unit price re-derived and checked on every row (實價登錄) | 2012-08+ |
 
 ### Government & civic data
 
