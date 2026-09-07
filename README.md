@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 25 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 27 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -30,6 +30,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-monthly-revenue](https://apify.com/chamarix/taiwan-monthly-revenue) | Monthly revenue of 1,900+ listed & OTC companies, MoM/YoY (月營收) | monthly |
 | [taiwan-financial-statements](https://apify.com/chamarix/taiwan-financial-statements) | Quarterly income statement, balance sheet & cash flow, identities checked per row (財報三表) | 2013Q1+ |
 | [taiwan-dividend-calendar](https://apify.com/chamarix/taiwan-dividend-calendar) | Ex-dividend / ex-rights dates, reference prices, payouts (除權息) | 2003+ |
+| [taiwan-esg-disclosures](https://apify.com/chamarix/taiwan-esg-disclosures) | 21 ESG topics per company — Scope 1/2/3 emissions, energy, water, waste, pay, board composition, climate risk and cyber incidents, every row checked against the totals it states about itself (ESG揭露) | 2025 report year+ |
 
 ### Events & governance (事件面)
 
@@ -45,6 +46,12 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-stock-daily-quotes](https://apify.com/chamarix/taiwan-stock-daily-quotes) | Daily OHLCV for every listed & OTC security — open/high/low/close, change, volume, turnover, VWAP, plus P/E, price-to-book and dividend yield, with ex-rights sessions flagged (個股日行情) | 2004+ |
 | [taiwan-warrants-daily](https://apify.com/chamarix/taiwan-warrants-daily) | Every listed & OTC warrant priced daily — OHLC, underlying close, strike, exercise ratio, expiry, plus moneyness, premium and leverage (權證) | 2004+ |
 | [taifex-options-chain](https://apify.com/chamarix/taifex-options-chain) | The full options chain by strike and expiry — OHLC, volume, settlement price, open interest, best bid/ask, both trading sessions, plus the exchange's own published Delta (選擇權逐履約價行情) | 2001-12+ |
+
+### Fixed income (固定收益)
+
+| Actor | Data | History |
+|---|---|---|
+| [taiwan-government-bonds](https://apify.com/chamarix/taiwan-government-bonds) | Central government bond benchmark yields for the five on-the-run tenors, coupon-bearing and zero-coupon yield curves, per-bond average yields and the full issuance master — every carried-forward quote states how stale it is (中央公債殖利率) | 2005-01+ |
 
 ### Property market (不動產)
 
