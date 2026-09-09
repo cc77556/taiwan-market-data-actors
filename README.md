@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 27 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 28 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -45,6 +45,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-treasury-stock-buybacks](https://apify.com/chamarix/taiwan-treasury-stock-buybacks) | Every buyback ever filed — purpose, price band and window announced, versus shares actually bought and average price paid (庫藏股) | 2000+ |
 | [taiwan-stock-daily-quotes](https://apify.com/chamarix/taiwan-stock-daily-quotes) | Daily OHLCV for every listed & OTC security — open/high/low/close, change, volume, turnover, VWAP, plus P/E, price-to-book and dividend yield, with ex-rights sessions flagged (個股日行情) | 2004+ |
 | [taiwan-warrants-daily](https://apify.com/chamarix/taiwan-warrants-daily) | Every listed & OTC warrant priced daily — OHLC, underlying close, strike, exercise ratio, expiry, plus moneyness, premium and leverage (權證) | 2004+ |
+| [taiwan-futures-daily](https://apify.com/chamarix/taiwan-futures-daily) | Every futures contract's daily bar — OHLC, change, volume, settlement price, open interest and best bid/ask for all 384 contracts, both trading sessions, plus the large-trader open interest report (期貨日行情) | 1998-07+ |
 | [taifex-options-chain](https://apify.com/chamarix/taifex-options-chain) | The full options chain by strike and expiry — OHLC, volume, settlement price, open interest, best bid/ask, both trading sessions, plus the exchange's own published Delta (選擇權逐履約價行情) | 2001-12+ |
 
 ### Fixed income (固定收益)
