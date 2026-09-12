@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 29 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 30 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -29,6 +29,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 |---|---|---|
 | [taiwan-monthly-revenue](https://apify.com/chamarix/taiwan-monthly-revenue) | Monthly revenue of 1,900+ listed & OTC companies, MoM/YoY (月營收) | monthly |
 | [taiwan-financial-statements](https://apify.com/chamarix/taiwan-financial-statements) | Quarterly income statement, balance sheet & cash flow, identities checked per row (財報三表) | 2013Q1+ |
+| [taiwan-director-compensation](https://apify.com/chamarix/taiwan-director-compensation) | What every board was paid last year — pay alone and pay including the salaries directors draw as employees, for the parent company and for the whole consolidated group side by side, so what the subsidiaries paid is a subtraction, with the year's profit, EPS and ROE on the same row (董監酬金) | 2025 report year+ |
 | [taiwan-dividend-calendar](https://apify.com/chamarix/taiwan-dividend-calendar) | Ex-dividend / ex-rights dates, reference prices, payouts (除權息) | 2003+ |
 | [taiwan-esg-disclosures](https://apify.com/chamarix/taiwan-esg-disclosures) | 21 ESG topics per company — Scope 1/2/3 emissions, energy, water, waste, pay, board composition, climate risk and cyber incidents, every row checked against the totals it states about itself (ESG揭露) | 2025 report year+ |
 
