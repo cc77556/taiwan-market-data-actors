@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 30 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 31 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -45,6 +45,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-emerging-stock-quotes](https://apify.com/chamarix/taiwan-emerging-stock-quotes) | Emerging Stock Board quotes, bid/ask & turnover, company register and listing-application status — the pre-IPO tier (興櫃) | 2003+ |
 | [taiwan-treasury-stock-buybacks](https://apify.com/chamarix/taiwan-treasury-stock-buybacks) | Every buyback ever filed — purpose, price band and window announced, versus shares actually bought and average price paid (庫藏股) | 2000+ |
 | [taiwan-stock-daily-quotes](https://apify.com/chamarix/taiwan-stock-daily-quotes) | Daily OHLCV for every listed & OTC security — open/high/low/close, change, volume, turnover, VWAP, plus P/E, price-to-book and dividend yield, with ex-rights sessions flagged (個股日行情) | 2004+ |
+| [taiwan-odd-lot-trading](https://apify.com/chamarix/taiwan-odd-lot-trading) | Both odd-lot sessions for every listed & OTC security on one row — the intraday session that carries 98% of odd-lot turnover and the after-hours auction that most feeds mistake for the whole thing, with shares, trade count, turnover, OHLC and closing quotes, reconciled against the exchanges' own totals (零股交易) | 2004-12+ |
 | [taiwan-index-history](https://apify.com/chamarix/taiwan-index-history) | Daily TAIEX & TPEx index history — open/high/low/close, market turnover, share volume, trade count and the total-return index, plus one row per session for all ~273 TWSE indices with their official English names (加權指數/櫃買指數歷史) | 1990-01+ |
 | [taiwan-warrants-daily](https://apify.com/chamarix/taiwan-warrants-daily) | Every listed & OTC warrant priced daily — OHLC, underlying close, strike, exercise ratio, expiry, plus moneyness, premium and leverage (權證) | 2004+ |
 | [taiwan-futures-daily](https://apify.com/chamarix/taiwan-futures-daily) | Every futures contract's daily bar — OHLC, change, volume, settlement price, open interest and best bid/ask for all 384 contracts, both trading sessions, plus the large-trader open interest report (期貨日行情) | 1998-07+ |
