@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 36 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 41 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -23,6 +23,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [tdcc-shareholding-dispersion](https://apify.com/chamarix/tdcc-shareholding-dispersion) | Weekly TDCC shareholding dispersion — retail vs whale structure (股權分散表) | weekly |
 | [taiwan-foreign-shareholding](https://apify.com/chamarix/taiwan-foreign-shareholding) | Foreign ownership % and remaining quota per stock (外資持股) | snapshot |
 | [taiwan-broker-rankings](https://apify.com/chamarix/taiwan-broker-rankings) | Which securities firms traded the OTC board and how much — each firm's daily turnover, rank and market share by branch and by head office, plus the 15 most active firms in each of the day's 30 most active stocks in both lots and dollars, with every implied price checked against the stock's own range (券商成交排行) | 2007-04+ |
+| [taiwan-short-sale-eligibility](https://apify.com/chamarix/taiwan-short-sale-eligibility) | Can it be shorted today — the below-close short-sale ban list, margin and SBL short suspensions with forced cover dates, shares available to borrow (re-checked against the previous session's published quota), borrow fees and margin haircut changes, both boards (可否放空／借券費率) | 2013-09+ |
 | [taiwan-etf-regular-investment](https://apify.com/chamarix/taiwan-etf-regular-investment) | Monthly regular savings plan rankings — top stocks & ETFs by investor accounts, retail flow not price (定期定額) | 2020-10+ |
 
 ### Fundamentals (基本面)
@@ -33,6 +34,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taiwan-financial-statements](https://apify.com/chamarix/taiwan-financial-statements) | Quarterly income statement, balance sheet & cash flow, identities checked per row (財報三表) | 2013Q1+ |
 | [taiwan-director-compensation](https://apify.com/chamarix/taiwan-director-compensation) | What every board was paid last year — pay alone and pay including the salaries directors draw as employees, for the parent company and for the whole consolidated group side by side, so what the subsidiaries paid is a subtraction, with the year's profit, EPS and ROE on the same row (董監酬金) | 2025 report year+ |
 | [taiwan-dividend-calendar](https://apify.com/chamarix/taiwan-dividend-calendar) | Ex-dividend / ex-rights dates, reference prices, payouts (除權息) | 2003+ |
+| [taiwan-broker-financials](https://apify.com/chamarix/taiwan-broker-financials) | Every securities firm's monthly balance sheet and income statement — month and year-to-date, with the full trial balance by account code and the register of firms and branches (證券商財務月報) | 2013-01+ |
 | [taiwan-esg-disclosures](https://apify.com/chamarix/taiwan-esg-disclosures) | 21 ESG topics per company — Scope 1/2/3 emissions, energy, water, waste, pay, board composition, climate risk and cyber incidents, every row checked against the totals it states about itself (ESG揭露) | 2025 report year+ |
 
 ### Events & governance (事件面)
@@ -40,6 +42,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | Actor | Data | History |
 |---|---|---|
 | [taiwan-corporate-action-prices](https://apify.com/chamarix/taiwan-corporate-action-prices) | Every official price discontinuity — capital reductions, par value changes and ETF splits or reverse splits, with the pre-halt close, the exchange's reopening reference price and the adjustment factor between them, plus the exchange ratio and any cash returned; the published limits and reference price are both re-derived and checked on every row (減資／面額變更／ETF分割參考價) | 2011-01+ |
+| [taiwan-board-directors](https://apify.com/chamarix/taiwan-board-directors) | Every independent director's career and other board seats linked back to stock codes, full board rosters, chair/CEO duality, director elections, shareholder proposals and major shareholders (董監事／獨立董事) | snapshot |
 | [taiwan-stock-alerts](https://apify.com/chamarix/taiwan-stock-alerts) | Watch-list, disposition & short-sale suspension alerts (注意股/處置股) | multi-year |
 | [taiwan-insider-share-transfers](https://apify.com/chamarix/taiwan-insider-share-transfers) | Insider share-transfer filings — directors, officers, 10% holders (內部人轉讓申報) | 2002+ |
 | [taiwan-director-shareholdings](https://apify.com/chamarix/taiwan-director-shareholdings) | Monthly director / officer / 10%-holder shareholdings and share-pledge ratio (董監持股質押) | 1999+ |
@@ -60,7 +63,14 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 
 | Actor | Data | History |
 |---|---|---|
+| [taiwan-convertible-bonds](https://apify.com/chamarix/taiwan-convertible-bonds) | Daily bars for every convertible and exchangeable bond on the Taipei Exchange — matched and negotiated sessions kept apart, every average price recomputed — joined to conversion price and window, put date and put price, coupon and outstanding balance (可轉債) | daily |
 | [taiwan-government-bonds](https://apify.com/chamarix/taiwan-government-bonds) | Central government bond benchmark yields for the five on-the-run tenors, coupon-bearing and zero-coupon yield curves, per-bond average yields and the full issuance master — every carried-forward quote states how stale it is (中央公債殖利率) | 2005-01+ |
+
+### Commodities (商品)
+
+| Actor | Data | History |
+|---|---|---|
+| [taiwan-gold-spot](https://apify.com/chamarix/taiwan-gold-spot) | The Taipei Exchange physical gold board — daily VWAP, traded high/low, market-maker closing quotes and spread, every firm's turnover and every print by firm and price, in NT$ per 台錢, per gram and per troy ounce, with the 2025 台兩→台錢 unit change handled (黃金現貨) | 2015-01+ |
 
 ### Property market (不動產)
 
