@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 41 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 42 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -42,6 +42,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | Actor | Data | History |
 |---|---|---|
 | [taiwan-corporate-action-prices](https://apify.com/chamarix/taiwan-corporate-action-prices) | Every official price discontinuity — capital reductions, par value changes and ETF splits or reverse splits, with the pre-halt close, the exchange's reopening reference price and the adjustment factor between them, plus the exchange ratio and any cash returned; the published limits and reference price are both re-derived and checked on every row (減資／面額變更／ETF分割參考價) | 2011-01+ |
+| [taiwan-ipo-listings](https://apify.com/chamarix/taiwan-ipo-listings) | Every TWSE and TPEx listing application from filing to first trading day — review committee, approval, underwriting agreement, listing date, underwriter and offer price, withdrawals parsed out of the remarks, plus TWSE delistings; the application and new-listing tables are joined and cross-checked field by field (申請上市櫃／新上市／終止上市) | 2000+ |
 | [taiwan-board-directors](https://apify.com/chamarix/taiwan-board-directors) | Every independent director's career and other board seats linked back to stock codes, full board rosters, chair/CEO duality, director elections, shareholder proposals and major shareholders (董監事／獨立董事) | snapshot |
 | [taiwan-stock-alerts](https://apify.com/chamarix/taiwan-stock-alerts) | Watch-list, disposition & short-sale suspension alerts (注意股/處置股) | multi-year |
 | [taiwan-insider-share-transfers](https://apify.com/chamarix/taiwan-insider-share-transfers) | Insider share-transfer filings — directors, officers, 10% holders (內部人轉讓申報) | 2002+ |
