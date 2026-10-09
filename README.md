@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 42 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 43 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -18,6 +18,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | [taifex-institutional-derivatives](https://apify.com/chamarix/taifex-institutional-derivatives) | Institutional futures & options positions (TAIFEX), incl. TXO put/call ratio | rolling 3y |
 | [taiwan-margin-trading](https://apify.com/chamarix/taiwan-margin-trading) | Daily margin trading & short sale balances per stock (融資融券) | 2024+ |
 | [taiwan-sbl-short-sale-balance](https://apify.com/chamarix/taiwan-sbl-short-sale-balance) | Securities-lending short sale balances (借券賣出餘額) | multi-year |
+| [taiwan-securities-lending-balance](https://apify.com/chamarix/taiwan-securities-lending-balance) | Shares on loan for every listed and OTC stock, split into the exchange's SLB system, broker OTC lending and lending-account borrowing, plus every SLB trade with its borrow fee rate and term and each securities firm's lending book; SLB + lending-account borrowing reconciles stock by stock with the separate SLB trade log (借券餘額／借券成交明細) | 2004-11+ |
 | [taiwan-short-sale-volume](https://apify.com/chamarix/taiwan-short-sale-volume) | How much was actually sold short each day — margin & borrowed-stock lots, NT$ turnover and the implied price of each, both boards (融券借券賣出成交量值) | 2008-09+ |
 | [taiwan-day-trading-stats](https://apify.com/chamarix/taiwan-day-trading-stats) | Day-trading volume, value & ratio per stock (現股當沖) | 2014+ |
 | [tdcc-shareholding-dispersion](https://apify.com/chamarix/tdcc-shareholding-dispersion) | Weekly TDCC shareholding dispersion — retail vs whale structure (股權分散表) | weekly |
