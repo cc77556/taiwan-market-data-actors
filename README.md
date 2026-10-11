@@ -1,6 +1,6 @@
 # Taiwan Market Data APIs
 
-Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 43 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
+Clean JSON APIs for Taiwan stock market and government data — institutional flows, financial statements, dividends, margin/short balances, insider filings, procurement tenders, real estate prices and more. 44 Actors on the [Apify platform](https://apify.com/chamarix), all built the same way:
 
 - **Official sources only** — TWSE, TPEx, TAIFEX, TDCC, MOPS, and government open-data endpoints. No third-party aggregators.
 - **Cross-validated on every run** — where an independent official endpoint exists for the same data, each run fetches it and compares field-by-field. Accounting identities (e.g. `net = buy − sell`, balance-sheet equations) are asserted per row.
@@ -66,6 +66,7 @@ Clean JSON APIs for Taiwan stock market and government data — institutional fl
 | Actor | Data | History |
 |---|---|---|
 | [taiwan-convertible-bonds](https://apify.com/chamarix/taiwan-convertible-bonds) | Daily bars for every convertible and exchangeable bond on the Taipei Exchange — matched and negotiated sessions kept apart, every average price recomputed — joined to conversion price and window, put date and put price, coupon and outstanding balance (可轉債) | daily |
+| [taiwan-corporate-bonds](https://apify.com/chamarix/taiwan-corporate-bonds) | Every corporate, bank and Formosa bond on the Taipei Exchange — terms, outstanding balance, coupon, credit ratings, perpetuals and ~770 private placements — plus the 939-bond international register with ISINs, the daily OTC trade summary with the exchange's spread over government bonds, and theoretical prices for USD international bonds; masters reconciled against the exchange's own bond search pages (公司債、金融債、寶島債) | trades 2005-05+, fair values 2017-12+ |
 | [taiwan-government-bonds](https://apify.com/chamarix/taiwan-government-bonds) | Central government bond benchmark yields for the five on-the-run tenors, coupon-bearing and zero-coupon yield curves, per-bond average yields and the full issuance master — every carried-forward quote states how stale it is (中央公債殖利率) | 2005-01+ |
 
 ### Commodities (商品)
